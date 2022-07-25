@@ -1,5 +1,4 @@
 export default ({ folderId, tokenChild }) => {
-  const [token, setToken] = useState(null);
   const [rootFolderId, setRootFolderId] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
