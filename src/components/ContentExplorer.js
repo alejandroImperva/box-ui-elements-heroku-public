@@ -12,7 +12,8 @@ export default ({ folderId, tokenChild  }) => {
     const [isLoading, setIsLoading] = useState(false);
 
 
-    if(tokenChild) {
+    if (tokenChild) {
+       setRootFolderId(folderId);
         console.log('Loading UI Element...');
 
         return (
@@ -20,7 +21,7 @@ export default ({ folderId, tokenChild  }) => {
                         <ContentExplorer
                             logoUrl={""}
                             rootFolderId={rootFolderId}
-                            token={token}
+                            token={tokenChild}
                             language={"en_US"}
                             contentPreviewProps={{
                                 showAnnotations: true,
