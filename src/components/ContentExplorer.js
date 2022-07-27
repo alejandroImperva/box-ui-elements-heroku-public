@@ -7,7 +7,7 @@ import { ScaleLoader } from 'react-spinners';
 import { THEME_COLOR, EXPRESS_SERVER_HOST } from '../Constants';
 
 
-export default ({ folderId, tokenChild }) => {
+export default ({ folderId, userId }) => {
     const [token, setToken] = useState(null);
     const [rootFolderId, setRootFolderId] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
@@ -16,7 +16,7 @@ export default ({ folderId, tokenChild }) => {
         const fetchToken = async () => {
             setIsLoading(true);
             setRootFolderId(folderId);       
-            const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/${folderId}`);            
+            const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/20056225006`);             
             console.log('good token ==>>' + result.data.accessToken);
             setToken(result.data.accessToken);
             if (tokenChild) {
