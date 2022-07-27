@@ -16,7 +16,7 @@ export default ({ folderId, userId }) => {
         const fetchToken = async () => {
             setIsLoading(true);
             setRootFolderId(folderId);       
-            const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/20056225006`);             
+            const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-exchange/${folderId}`);          
             console.log('good token ==>>' + result.data.accessToken);
             setToken(result.data.accessToken);
             setIsLoading(false);
