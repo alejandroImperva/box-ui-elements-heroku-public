@@ -53,7 +53,9 @@ app.post("/signedrequest", async (req, res) => {
     switch(uiElement) {
         case "explorer":
             folderId = parameters.folderId;
-            res.redirect(301, `/explorer/${folderId}`);
+            tokenChild = parameters.tokenChild;
+            res.redirect(301, `/metadata?folderId=${folderId}
+                &tokenChild=${tokenChild}`);
             break;
         case "recents":
             const userId = parameters.userId;
