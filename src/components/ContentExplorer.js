@@ -23,7 +23,7 @@ export default ({ userId, folderId  }) => {
     }, []);
     
     if (token) {
-      setRootFolderId(folderId);
+      setRootFolderId('168369942506');
         return (
                 <div className="elements">
                 <ContentExplorer
