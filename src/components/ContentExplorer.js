@@ -4,12 +4,17 @@ import axios from 'axios';
 import { ContentExplorer } from 'box-ui-elements';
 import { ScaleLoader } from 'react-spinners';
 import { THEME_COLOR, EXPRESS_SERVER_HOST } from '../Constants';
+import { useParams } from "react-router-dom";
 
 
-export default ({ folderId, tokenChild }) => {
+export default ({ folderId }) => {
     const [token, setToken] = useState(null);
     const [rootFolderId, setRootFolderId] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
+    const ContentExplorer = (props) => {
+
+      setToken(props.match.params.tokenChild);
+  };
 
     useEffect(() => {
         const fetchToken = async () => {
@@ -18,7 +23,7 @@ export default ({ folderId, tokenChild }) => {
             const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/${folderId}`);            
             console.log('good token ==>>' + result.data.accessToken);
             
-            setToken(tokenChild);
+
             setIsLoading(false);
         }
         fetchToken();
