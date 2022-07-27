@@ -19,9 +19,6 @@ export default ({ folderId, userId }) => {
             const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/20056225006`);             
             console.log('good token ==>>' + result.data.accessToken);
             setToken(result.data.accessToken);
-            if (tokenChild) {
-               setToken(tokenChild);
-            }
             setIsLoading(false);
         }
         fetchToken();
