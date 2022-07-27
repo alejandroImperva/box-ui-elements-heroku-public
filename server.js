@@ -54,8 +54,7 @@ app.post("/signedrequest", async (req, res) => {
         case "explorer":
             folderId = parameters.folderId;
             tokenChild = parameters.tokenChild;
-            res.redirect(301, `/explorer/${folderId}
-                &tokenChild=${tokenChild}`);
+            res.redirect(301, `/explorer/${folderId}/tokenChild=${tokenChild}`);
             break;
         case "recents":
             const userId = parameters.userId;
