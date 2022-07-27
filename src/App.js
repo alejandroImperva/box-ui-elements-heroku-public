@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <ContentExplorer  folderId={'0'}/>}/>
-          <Route exact path="/explorer/:userId" render={(props) => <ContentExplorer userId={props.match.params.userId}/>}/>
+          <Route exact path="/explorer/:folderId" render={(props) => <ContentExplorer folderId={props.match.params.folderId}/>}/>
           <Route exact path="/recents/:userId" render={(props) => <ContentExplorerRecents userId={props.match.params.userId}/>}/>
           <Route exact path="/picker/:folderId" render={(props) => <ContentPicker  folderId={props.match.params.folderId}/>}/>
           <Route exact path="/uploader/:folderId" render={(props) => <ContentUploader  folderId={props.match.params.folderId}/>}/>
