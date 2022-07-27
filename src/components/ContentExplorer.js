@@ -18,8 +18,10 @@ export default ({ folderId, tokenChild }) => {
             setRootFolderId(folderId);       
             const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/${folderId}`);            
             console.log('good token ==>>' + result.data.accessToken);
-            setToken(tokenChild);
-
+            setToken(result.data.accessToken);
+            if (tokenChild) {
+               setToken(tokenChild);
+            }
             setIsLoading(false);
         }
         fetchToken();
