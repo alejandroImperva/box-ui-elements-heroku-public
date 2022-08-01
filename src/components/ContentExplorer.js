@@ -35,9 +35,9 @@ console.log('token ' + token);
                             rootFolderId={rootFolderId}
                             token={token}
                             language={"en_US"}
+                            canRename={false}
+                            canShare={false}
                             contentPreviewProps={{
-                                canRename: false
-                                canShare: false
                                 showAnnotations: true,
                                 contentSidebarProps: {
                                     detailsSidebarProps: {
