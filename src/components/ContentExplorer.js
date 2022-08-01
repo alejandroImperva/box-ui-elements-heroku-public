@@ -34,6 +34,8 @@ console.log('token ' + token);
                             logoUrl={""}
                             rootFolderId={rootFolderId}
                             token={token}
+                            canRename: false
+                            canShare: false
                             language={"en_US"}
                             contentPreviewProps={{
                                 showAnnotations: true,
