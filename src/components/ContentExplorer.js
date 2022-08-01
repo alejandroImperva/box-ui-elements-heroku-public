@@ -37,6 +37,8 @@ console.log('token ' + token);
                             language={"en_US"}
                             canRename={false}
                             canShare={false}
+                            canSetShareAccess={false}
+                            canCreateNewFolder={false}
                             contentPreviewProps={{
                                 showAnnotations: true,
                                 contentSidebarProps: {
