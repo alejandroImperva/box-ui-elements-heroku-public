@@ -34,7 +34,7 @@
 } */
 
 .app {
-  display: block;
+  display: flex;
   height: 450px;
   overflow: hidden;
 }
