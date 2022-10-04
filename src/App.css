@@ -35,7 +35,8 @@
 
 .app {
   display: block;
-  height: 500px;
+  height: 450px;
+  overflow: hidden;
 }
 
 .bdl-CollapsibleSidebar-wrapper {
@@ -60,7 +61,7 @@
 
 .elements {
   padding-top: 0px;
-  height: 450px;
+  height: 440px;
   width: calc(100% + 40px);
   padding: 0 0 0 20px;
   margin: 0 0 0 -20px;
@@ -74,7 +75,7 @@
   justify-content: center;
   align-items: center;
   /* width: 100%; */
-  height: 100vh;
+  height: 100px;
 }
 
 .columns {
