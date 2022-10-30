@@ -103,3 +103,8 @@ body,
 .be-empty{
     display: block;
 }
+.be-btn-add {
+  background-color: #F2C646;
+    height: 35px;
+    width: 30px;
+}
