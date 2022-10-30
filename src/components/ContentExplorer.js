@@ -39,7 +39,7 @@ console.log('token ' + token);
                             canShare={false}
                             canSetShareAccess={false}
                             canCreateNewFolder={false}
-                            canPreview={false}
+                            canPreview={true}
                             contentPreviewProps={{
                                 showAnnotations: true,
                                 contentSidebarProps: {
