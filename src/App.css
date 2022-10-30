@@ -103,10 +103,9 @@ body,
 .be-empty{
     display: block;
 }
-.btn.be-btn-add {
+.btn {
     margin-left: 7px;
-    padding: 5px 6px;
+    padding: 10px 10px;
     background-color: #F2C646;
-    height: 35px;
-    width: 30px;
+
 }
