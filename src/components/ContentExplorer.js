@@ -39,7 +39,7 @@ console.log('token ' + token);
                             canShare={false}
                             canSetShareAccess={false}
                             canCreateNewFolder={false}
-                            canPreview={true}
+                            canPreview={false}
                             contentPreviewProps={{
                                 showAnnotations: true,
                                 contentSidebarProps: {
@@ -50,10 +50,7 @@ console.log('token ' + token);
                                         hasClassification: true,
                                         hasRetentionPolicy: true,
                                     },
-                                    hasActivityFeed: true,
-                                    hasMetadata: true,
-                                    // hasSkills: true,
-                                    hasVersions: true
+                                    hasActivityFeed: true
                                 }
                             }}
                         />
