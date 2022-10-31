@@ -109,7 +109,7 @@ body,
     background-color: #F2C646;
 }
 
-.bdl-ViewModeChangeButton {
+.btn.bdl-ViewModeChangeButton {
     margin-left: 7px;
     padding: 10px 10px;
     background-color: #F2C646;
