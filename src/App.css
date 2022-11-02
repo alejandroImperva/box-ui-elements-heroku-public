@@ -35,7 +35,7 @@
 
 .app {
   display: flex;
-  height: 450px;
+  height: 420px;
   overflow: hidden;
 }
 
@@ -53,16 +53,6 @@
 
 .nav-submenu-item {
   padding: 0px 0px 0px 30px;
-}
-
-html,
-body,
-.container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
 }
 
 
