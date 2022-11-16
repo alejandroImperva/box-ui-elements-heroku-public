@@ -24,17 +24,14 @@ export default ({ folderId, tokenChild }) => {
         }
         fetchToken();
     }, []);
-console.log('token ' + token);
     if(token) {
-        console.log('Loading UI Element...');
-
         return (
                 <div className="elements">
                         <ContentExplorer
                             logoUrl={""}
                             rootFolderId={rootFolderId}
                             token={token}
-                            language={"en_US"}
+                            language={"en"}
                             canRename={false}
                             canShare={false}
                             canSetShareAccess={false}
